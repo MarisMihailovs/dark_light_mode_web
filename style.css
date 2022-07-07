@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400;500&display=swap');
 
 :root {
-  --primary-color: rgb(29, 29, 29);
-  --primary-variant: #807878;
+  --primary-color: rgb(92, 90, 90);
+  --primary-variant: #313030;
   --secondary-color: #534cd5;
   --on-primary: rgb(250, 250, 250);
   --on-background: rgb(77, 74, 74);
@@ -109,6 +109,7 @@ a:focus:before {
 /* About Section */
 .about-container {
   display: flex;
+  text-align: center;
 }
 
 .image-container {
@@ -213,7 +214,7 @@ p {
   z-index: 100;
   position: fixed;
   right: 25px;
-  top: 30px;
+  top: 20px;
 }
 
 .theme-switch-wrapper span {
@@ -225,6 +226,7 @@ p {
   position: relative;
   top: -4px;
   right: 5px;
+  font-family: 'Open Sans', sans-serif;
   color: var(--on-background);
 }
 
