@@ -5,6 +5,8 @@ const image1 = document.getElementById('image1');
 const image2 = document.getElementById('image2');
 const image3 = document.getElementById('image3');
 const textBox = document.getElementById('text-box');
+const titleGroup = document.getElementsByClassName('title-group');
+
 
 
 //  toggle darklight mode
@@ -37,7 +39,7 @@ toggleSwitch.addEventListener('change', switchTheme);
 // check local storage for theme
 
 const currentTheme = localStorage.getItem('theme');
-if (currentTheme) {
+if (currentTheme === 'light') {
     document.documentElement.setAttribute('data-theme', 'dark');
 
     if (currentTheme === 'dark') {
@@ -45,3 +47,10 @@ if (currentTheme) {
         toggleDarkLightMode(true);
     }
 }
+
+// intro animation of titleGroup 
+function titleAnimation() {
+    setTimeout(() => { (titleGroup[0].style.opacity = 1) }, 1000);
+}
+
+window.addEventListener('load', titleAnimation);
