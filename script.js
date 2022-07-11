@@ -48,9 +48,9 @@ if (currentTheme === 'light') {
     }
 }
 
-// intro animation of titleGroup 
-function titleAnimation() {
-    setTimeout(() => { (titleGroup[0].style.opacity = 1) }, 1000);
-}
+// intro animation of titleGroup
+// function titleAnimation() {
+//     setTimeout(() => { (titleGroup[0].style.opacity = 1) }, 1000);
+// }
 
-window.addEventListener('load', titleAnimation);
+// window.addEventListener('load', titleAnimation);
